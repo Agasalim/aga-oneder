@@ -1,0 +1,671 @@
+html{scroll-behavior: smooth;}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.363)), url(Source/Oneder_img.webp)center/cover;
+    height:100vh;
+}
+#nav_bar{
+    border-bottom: 1px solid #ffffff33 ;
+}
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right_links{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+.logo{
+    font:900 30px "Work Sans";
+    color: white;
+}
+.right_links li a{
+    font: 16px "Work Sans";
+    color: #ffffffb3;
+    padding: 10px 15px;
+    transition: .3s;
+}
+.right_links .home a{color: white;}
+.right_links a:hover{color: white;}
+
+/**<---DROPDOWN--->*/
+.about_list li{
+    display: block;
+    padding: 15px;
+    transition: .3s;
+}
+.about_list li a{
+    color: black;
+    padding: 15px 55px 15px 10px;
+}
+.blog_list li{
+    display: block;
+    background-color: white;
+    padding: 15px;
+    transition: .3s;
+}
+.blog_list li a{
+    padding: 15px 55px 15px 10px;
+}
+.about_list{
+    position: absolute;
+    background-color: white;
+    width: 180px;
+    z-index: 999;
+    display: none;    
+    margin-top: 10px;
+    border-top: 2px solid #007bff;
+}
+.about_list li:hover{
+    background-color: #eff1f3;
+}
+.blog_list{
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    left: 180px;
+    top: 135px;
+    z-index: 999;
+    display: none;    
+    margin-top: 10px;
+    border-top: 2px solid #007bff;
+}
+ul li:hover ul.about_list{
+    display: block;
+}
+.about_list li:hover ul.blog_list{
+    display: block;
+}
+.about_list a:hover{
+    color: black;
+}
+.blog_list li:hover .about_list li a{
+    color: #007bff; /*bu funcsiyani islede bilmedim*/
+}
+
+
+/**<---HEADER_CONTENT SECTION--->*/
+#header_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 50px;
+    align-items: center;
+    height: 100vh;
+}
+#header_content h1{
+    font:900 48px "Work Sans";   
+    color: white;
+    text-transform: uppercase;
+    width: 600px;
+    text-align: center;
+}
+.blue_btn{
+    font: 16px "Work Sans";
+    color: white;
+    padding: 15px 35px;
+    background-color: #007bff;
+    border-radius: 50px;
+    transition: .3s;
+}
+.blue_btn:hover{
+    background-color: black;
+}
+
+/**<---SECTIONS HEAD--->*/
+.section_head{
+    font:900 40px "Work Sans";
+    color: #007bff;
+    text-align: center;
+    margin-top: 80px;
+}
+.medium_head{
+    font: 28px "Work Sans";
+    color: black;
+}
+.small_head{
+    font: 20px "Work Sans";
+    color: black;
+}
+
+
+/**<---ABOUT SECTION--->*/
+#about{height: 90vh;}
+.about_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.about_left img{width: 500px;}
+.about_right{
+    width: 500px;
+}
+.about_right p{
+    font: 400 16px "Work Sans";
+    color: gray;
+    line-height: 25px;
+    margin: 25px 0;
+}
+.about_right ul li{
+    font: 400 16px "Work Sans";
+    color: gray;
+    line-height: 40px;
+}
+.about_right ul{
+    margin-bottom: 40px;
+}
+.about_right i{
+    color: #71bc42;
+    padding-right: 20px;
+}
+
+/**<---OUR TEAM SECTION--->*/
+#our_team{
+    height: 160vh;
+}
+.team_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.section_text{
+    font: 20px "Work Sans";
+    color: #808080;
+    width: 700px;
+    text-align: center;
+    line-height: 35px;
+}
+.exp_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.exp_cards .card{
+    width:250px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.t_img{
+    position: relative;
+    height: 250px;
+}
+.t_img img{
+    width: 250px;
+    height: 250px;
+}
+.link_icon{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    padding:0 12px;
+    /* display: none; */
+    transform: scale(0);
+    transform-origin: left;
+    transition: .3s;
+}
+.link_icon li{
+    margin-top: 20px;
+}
+.link_icon i{
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+.card:hover .link_icon{
+    /* display: block; */
+    transform: scale(1);
+}
+.link_icon i:hover{color: black;}
+.expert_info{padding: 10px;}
+.expert_info .duty{
+    font:14px "Work Sans";
+    color: #ccc;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+/**<---SERVICE SECTION--->*/
+#service{
+    background-color: #F8F9FA;
+    height: 130vh;
+    padding: 20px 0;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.service{
+    width: 350px;
+    margin-bottom: 50px;
+}
+.service i{
+    font-size: 48px;
+    color: #007bff;
+    margin: 20px 0;
+}
+.service p{
+    font: 16px "Work Sans";
+    color: #808080;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.service a{
+    display: inline-block;
+    font: 16px "Work Sans";
+    color: #007bff;
+    margin-top: 20px;
+}
+.service a:hover{color: #0056b3;}
+
+/**<---TESTIMONIAL SECTION--->*/
+#testimonials{
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#testimonials p{
+        font:italic 20px "Work Sans";
+        color: #808080;
+        width: 700px;
+        text-align: center;
+        line-height: 35px;       
+        margin: 50px;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.rate img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.rate span{
+    font:16px "Work Sans";
+    color: #808080;
+}
+.circles{
+    margin-top: 50px;
+}
+.circles i{
+    font-size: 10px;
+    color: #DEE2E6;
+    margin: 2px;
+}
+
+/**<---PRICING SECTION--->*/
+#pricing{
+    background-color: #F8F9FA;
+    height: 120vh;
+    padding:20px 0;
+}
+.prices{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    width: 280px;
+    background-color: white;
+    padding: 30px;
+}
+.price h3{
+    text-align: center;
+}
+.cost{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+.cost .value{
+    font: 48px "Work Sans";
+    color: #007bff;
+    margin-right: 10px;
+}
+.cost .year{
+    font: 14px "Work Sans";
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.checked{
+    margin: 15px 0;
+}
+.checked i{
+    color: #71bc42;
+    padding-right: 20px;
+}
+.checked li{
+    font: 16px "Work Sans";
+    color: #808080;
+    line-height: 35px;
+}
+.deactive{
+    text-decoration: line-through;
+    color: #ccc !important;
+}
+.deactive i{
+    color: #ccc;
+}
+.price a{
+    background-color: #6C757D;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font: 16px "Work Sans";
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    transition: .3s;
+}
+.buy{
+    text-align: center;
+}
+.blue_buy{
+    text-align: center;
+}
+.blue_buy a{
+    background-color: #007bff;
+    transition: .3s;
+}
+.buy a:hover{background-color: #5a6268;}
+.blue_buy a:hover{background-color: black;}
+
+/**<---FAG SECTION--->*/
+#fag{
+    background-color: #F8F9FA;
+    height: 140vh;
+    padding:20px 0;   
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.left_fag{
+    width: 530px;
+}
+.right_fag{
+    width: 530px;
+}
+.questions p{
+    font: 400 16px "Work Sans";
+    color: gray;
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+.questions h3{
+    margin-bottom: 20px;
+}
+
+/**<---NO SECTION HEAD--->*/
+#no_section_head{
+    height: 80vh;
+}
+.no_head_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.boxes{
+    display: flex;
+}
+.box{
+    width: 250px;
+    margin-right: 20px;
+}
+.box i{
+    font-size: 48px;
+    color: #007bff;
+    margin: 30px 0;
+}
+.box p{
+    font: 16px "Work Sans";
+    color: #808080;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.box a{
+    display: inline-block;
+    font: 16px "Work Sans";
+    color: #007bff;
+    margin-top: 20px;
+}
+.box a:hover{color: #0056b3;}
+.section_img img{
+    width: 500px;
+}
+
+/**<---BLOG SECTION--->*/
+#our_blog{
+    height: 130vh;
+}
+.blogs{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog{
+    width: 350px;
+}
+.blog h3{
+    margin-top: 25px;
+    transition: .3s;
+}
+.blog_line{
+    font: 14px "Work Sans";
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+}
+.blog a{
+    font: 16px "Work Sans";
+    color: #007bff;
+    transition: .3s;
+}
+.blog span{
+    font-size: 24px;
+    margin: 0 10px 10px;
+}
+.blog p{
+    font: 16px "Work Sans";
+    color: gray;
+    line-height: 27px;
+    margin: 20px 0;
+}
+.blog a:hover{color: #0056b3;}
+.blog h3:hover{color: #007bff;}
+
+/**<---CONTACT SECTION--->*/
+#contact{
+    background-color: #F8F9FA;
+    height: 200vh;
+    padding: 30px 0;
+}
+.contact_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+.contact_info div{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact_info i{
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.contact_info p{
+    font: 16px "Work Sans";
+    color: #808080;
+}
+.contact_info a{
+    font: 16px "Work Sans";
+    color: #007bff;
+}
+#contact form{
+    background-color: white;
+    padding: 50px;
+}
+#contact form h3{
+    margin-bottom: 50px;
+}
+#contact form label{
+    font: 16px "Work Sans";
+}
+#contact form input{
+    padding: 15px 0;
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    width: 100%;
+    margin:15px 0 30px 0;
+}
+.full_name{
+    display: flex;
+    justify-content: space-between;
+}
+.first_name{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.last_name{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+textarea{
+    width: 100%;
+    height: 180px;
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+#contact ::placeholder{
+    font: 16px "Work Sans";
+    color: #808080;
+    padding: 10px;
+}
+form .message_btn{
+    width: 180px;
+    padding: 15px 25px;
+    margin-top: 15px;
+    background-color: #007bff;
+    border-radius: 30px;
+    border: none;
+    font: 16px "Work Sans";
+    color: white;
+    cursor: pointer;
+}
+
+/**<---FOOTER--->*/
+footer{
+    background-color: #333333;
+    height: 70vh;
+    padding: 70px 0;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_content h3{
+    font: 16px "Work Sans";
+    color: white;
+    margin-bottom: 30px;
+}
+.about_box p{
+    font: 16px "Work Sans";
+    color: #737373;
+    width: 350px;
+    line-height: 27px;
+}
+.footer_content a{
+    color: #737373;
+
+}
+.quick_link a{
+    display: block;
+    margin-bottom: 20px;
+    font: 16px "Work Sans";
+    transition: .3s;
+}
+.quick_link{
+    margin:0 80px;
+}
+.social i{
+    font-size: 16px;
+    margin-right: 30px;
+    transition: .3s;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+    width: 120px;
+    font: 16px "Work Sans";
+    color: white;
+    padding: 12px 15px;
+    background-color: transparent;
+    border: 1px solid #737373;
+    border-right: none;
+    border-radius:30px 0 0 30px;
+    outline: none;
+}
+footer form button{
+    background-color: white;
+    padding: 0 30px;
+    font: 16px "Work Sans";
+    color: black;
+    border: 1px solid #007bff;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+#footer ::placeholder{
+    font: 16px "Work Sans";
+    color: #808080;
+    padding: 10px;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid #737373;
+}
+footer .copyright p{
+    font: 16px "Work Sans";
+    color: #737373;
+}
+footer .copyright i{color: #DC3545;}
+footer .copyright a{
+    font: 16px "Work Sans";
+    color: #999;
+}
+.social i:hover, .quick_link a:hover{
+    color:white;
+}
+footer form button:hover{
+    border: 1px solid #333;
+}
