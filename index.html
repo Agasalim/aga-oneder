@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aga Oneder</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
@@ -24,14 +24,17 @@
             <div class="container">
                 <div class="nav_links">
                     <a class="logo" href="#">ONEDER</a>
-                    <ul class="right_links">
+                    <input type="checkbox" id="menu_bar">
+                    <label class="menu_open" for="menu_bar"><i class="fa-solid fa-bars"></i></label>
+                    <label class="menu_close" for="menu_bar"><i class="fa-solid fa-x"></i></label>
+                        <ul class="right_links">
                         <li class="home"><a href="#">Home</a></li>
                         <li><a href="#">About Us <i class="fa-solid fa-chevron-down fa-xs"></i></a>
                             <ul class="about_list">
                                 <li><a href="#our_team">Team</a></li>
                                 <li><a href="#pricing">Pricing</a></li>
                                 <li><a href="#fag">FAG</a></li>
-                                <li><a href="#">More Lnks</a>
+                                <li><a href="#">More Links <i class="fa-solid fa-chevron-right fa-xs"></i></a>
                                     <ul class="blog_list">
                                         <li><a href="">Menu One</a></li>
                                         <li><a href="">Menu Two</a></li>
@@ -52,7 +55,9 @@
         <div class="container">
             <div id="header_content">
                 <h1>I'm Creative One Page Template by Colorlib</h1>
-                <a class="blue_btn" href="">Get In Touch</a>
+                <div class="blue_btn">
+                    <a class="blue_btn" href="">Get In Touch</a>
+                </div>
             </div>
         </div>
     </header>
@@ -63,20 +68,22 @@
             <section id="about">
                 <h2 class="section_head">About Oneder</h2>
                 <div class="about_content">
-                    <div class="about_left" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about_img" data-aos="fade-up" data-aos-duration="1000">
                         <img src="Source/Oneder_img.webp" alt="">
                     </div>
-                    <div class="about_right"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about_right" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="medium_head">For the next great business</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum. Quibusdam exercitationem
-                            officia repellendus dolorum anomi architecto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque
+                            eligendi in nostrum labore omnis quaerat.</p>
                         <ul>
                             <li><i class="fa-solid fa-check"></i>Officia quaerat eaque neque</li>
                             <li><i class="fa-solid fa-check"></i>Possimus aut consequuntur incidunt</li>
                             <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet</li>
                             <li><i class="fa-solid fa-check"></i>Consectetur adipisicing elit</li>
                         </ul>
-                        <a class="blue_btn" href="">Get In Touch</a>
+                        <div class="blue_btn">
+                            <a class="blue_btn" href="">Get In Touch</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -85,12 +92,12 @@
         <div class="container">
             <section id="our_team">
                 <div class="team_head">
-                    <h2 class="section_head"  data-aos="fade-up" data-aos-duration="1000">Our Team</h2>
-                    <p class="section_text"  data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque
-                        tempora reiciendis.</p>
+                    <h2 class="section_head" data-aos="fade-up" data-aos-duration="1000">Our Team</h2>
+                    <p class="section_text" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
                 </div>
                 <div class="exp_cards">
-                    <div class="card"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000">
                         <div class="t_img">
                             <img src="Source/onder_team1.webp" alt="">
                             <ul class="link_icon">
@@ -268,18 +275,21 @@
         <section class="container">
             <div id="testimonials">
                 <h2 class="section_head" data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
-                <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa vel neque ex nisi iusto fugit mollitia
+                <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsa vel neque ex nisi iusto fugit mollitia
                     dicta distinctio, labore possimus repellendus tempora repellat facere necessitatibus, deserunt
                     reprehenderit? Mollitia, reprehenderit commodi?</p>
                 <div class="rate" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="Source/rate-man.webp" alt="">
-                    <span>John Smith</span>
-                </div>
-                <div class="circles" data-aos="fade-up" data-aos-duration="1000">
-                    <a href=""><i style="color: #007bff;" class="fa-solid fa-circle"></i></a>
-                    <a href=""><i class="fa-solid fa-circle"></i></a>
-                    <a href=""><i class="fa-solid fa-circle"></i></a>
-                    <a href=""><i class="fa-solid fa-circle"></i></a>
+                    <div class="rate_man">
+                        <img src="Source/rate-man.webp" alt="">
+                        <span>John Smith</span>
+                    </div>
+                    <div class="circles" data-aos="fade-up" data-aos-duration="1000">
+                        <a href=""><i style="color: #007bff;" class="fa-solid fa-circle"></i></a>
+                        <a href=""><i class="fa-solid fa-circle"></i></a>
+                        <a href=""><i class="fa-solid fa-circle"></i></a>
+                        <a href=""><i class="fa-solid fa-circle"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -411,7 +421,9 @@
                 <h2 class="section_head" data-aos="fade-up" data-aos-duration="1000">Our Blog</h2>
                 <div class="blogs">
                     <div class="blog" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="Source/oneder_blog1.webp" alt="">
+                        <div class="blog_img">
+                            <img src="Source/oneder_blog1.webp" alt="">
+                        </div>
                         <a href="#">
                             <h3 class="small_head">Repudiandae Quisquam Eaque Dolore</h3>
                         </a>
@@ -427,7 +439,9 @@
                         </div>
                     </div>
                     <div class="blog" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="Source/oneder_blog2.webp" alt="">
+                        <div class="blog_img">
+                            <img src="Source/oneder_blog2.webp" alt="">
+                        </div>
                         <a href="#">
                             <h3 class="small_head">Repudiandae Quisquam Eaque Dolore</h3>
                         </a>
@@ -443,7 +457,9 @@
                         </div>
                     </div>
                     <div class="blog" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="Source/oneder_blog3.webp" alt="">
+                        <div class="blog_img">
+                            <img src="Source/oneder_blog3.webp" alt="">
+                        </div>
                         <a href="#">
                             <h3 class="small_head">Repudiandae Quisquam Eaque Dolore</h3>
                         </a>
@@ -495,7 +511,9 @@
                     <label for="">Subject<input type="text"></label>
                     <label for="message">Message<textarea name="" id=""
                             placeholder="Write your notes or questions here"></textarea></label>
-                    <button class="message_btn">Send Message</button>
+                    <div class="blue_btn">
+                        <a class="blue_btn" href="">Send Message</a>
+                    </div>
                 </form>
             </div>
         </section>
@@ -519,10 +537,12 @@
                 </div>
                 <div class="social">
                     <h3>Follow Us</h3>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <div class="social_links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="subscribe">
                     <h3>Suscribe Newsletter</h3>
@@ -535,13 +555,12 @@
             <div class="copyright">
                 <p class="footer_copyright">Copyright ©2024 All rights reserved | This template is made with
                     <i class="fa-solid fa-heart"></i> by
-                    <a href="#">Colorlib</a>
+                    <a href="#">Agasalim</a>
                 </p>
             </div>
         </div>
 
     </footer>
-
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
